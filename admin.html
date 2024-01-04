@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <div class="logo">
+                <span>Welcome Admin</span>
+            </div>
+            <ul>
+                <li><a href="menu.html">Data Menu</a></li>
+                <li><a href="customer.html">Data Customer</a></li>
+                <li><a href="admin.html">Data Admin</a></li>
+            </ul>
+        </div>
+        <div class="center">
+            <div class="table-container">
+                <table class="custom-table">
+                    <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Username Admin</th>
+                        <th>Password</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <!-- <%
+                        MenuDaoImpl dao = new MenuDaoImpl(DBConnect.getConn());
+                        List<MenuDetail> list = dao.getAllMenu();
+                        for (MenuDetail b : list) {
+                    %> -->
+                    <br>
+                    <tr>
+                        <td><%=b.getId()%>
+                        </td>
+                        <td><%=b.getNamaMenu()%>
+                        </td>
+                        <!-- <td><%=b.getKategori()%>
+                        </td> -->
+                        <td><%=b.getPrice()%>
+                        </td>
+                        <td>
+                            <button class="btn blue"><a href="editcustomer.html">Edit</a></button>
+                            <button class="btn red"><a href="MenuDeleteServlet?id=<%=b.getId()%>">Delete</a></button>
+                        </td>
+                    </tr>
+                    <!-- <%
+                        }
+                    %> -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="admin.js"></script>
+</body>
+</html>

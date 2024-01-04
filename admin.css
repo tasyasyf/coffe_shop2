@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+:root{
+    --white: #fff;
+    --light: #eeeded;
+    --orange: #FFA16C;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: url(gambar/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
+    align-items: center;
+    gap: 1.5rem;    
+}
+.container{
+    width:1200px;
+    border:1px solid var(--white);
+    max-width: 100%;
+    margin:50px auto 0;
+    display: grid;
+    grid-template-columns: 200px auto 300px;
+    padding:20px;
+    border-radius: 30px;
+    min-height: 80vh;
+}
+.container .menu{
+    background-color: var(--white);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.container .center{
+    background-color: var(--light);
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;  
+    width: 143%;  
+
+    
+} 
+/* menu */
+.menu .logo{
+    padding:20px;
+    font-family: 'Lobster', cursive;
+    font-size: xx-large;
+    height:40px;
+}
+.menu .logo span{
+    color: black;
+}
+.menu ul{
+    padding:20px 0 20px 20px;
+    list-style: none;
+    /* border-bottom: 1px solid var(--light); */
+}
+.menu ul li{
+    padding:10px 0;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.menu ul li i { 
+    margin-right: 12px;
+}
+.menu ul li a.active{
+    color: var(--orange);
+}
+.menu ul li a:hover{
+    color: var(--orange);
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+.custom-table {
+    width: 95%;
+    border-collapse: collapse;
+    margin-left: 20px;
+    table-layout: fixed; /* Menentukan lebar kolom secara tetap */
+}
+
+.custom-table th,
+.custom-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    width: 25%; /* Setiap kolom memiliki lebar 20% dari tabel */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}

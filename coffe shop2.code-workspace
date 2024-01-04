@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../car rental reservation"
+		},
+		{
+			"path": "../../../../Downloads/sheo_website-master 2"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "coffe shop2"
+	}
+}
